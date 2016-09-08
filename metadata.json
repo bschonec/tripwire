@@ -1,0 +1,14 @@
+{
+  "name": "bschonec-tripwire",
+  "version": "0.1.0",
+  "author": "Brian Schonecker",
+  "summary": "A puppet module for installing Tripwire on Linux systems.",
+  "license": "Apache 2.0",
+  "source": "https://github.com/bschonec/tripwire.git",
+  "project_page": "https://github.com/bschonec/tripwire",
+  "issues_url": "https://github.com/bschonec/tripwire/issues",
+  "dependencies": [
+    {"version_requirement":">= 1.0.0","name":"puppetlabs-stdlib"}
+  ]
+}
+
