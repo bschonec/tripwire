@@ -52,13 +52,6 @@ class tripwire (
 
 {
 
-  # Do some validation of parameters:
-  validate_re($service_ensure, '^(running|stopped)$', "tripwire::service_ensure may be either 'running' or 'stopped' and is set to <${service_ensure}>.")
-  validate_bool($service_enable)
-
-  if is_integer($bridge_port) == false { fail("tripwire::bridge_port must be an integer and is set to <${bridge_port}>.")}
-
-
   package { $package_name:
     ensure => $package_ensure,
   }

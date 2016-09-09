@@ -1,0 +1,12 @@
+{
+  "spec/classes/init_spec.rb": "47eb1155685ca6723ab7c513bde020ee",
+  "metadata.json": "c9beadc610032bd9bd01230eba3f5aeb",
+  "manifests/params.pp": "4f704582483a3aa010cd2ec73d415f66",
+  "templates/twagent.conf.erb": "86eef703f6e1359ee3adc4c47010687f",
+  "Rakefile": "20b80e526e351a74df2001f504e756d2",
+  "Gemfile": "dbc1a15e3a264c03878028240cfc5d89",
+  "README.md": "f785f95316a4b381ac5ff6a4d55ab927",
+  "manifests/init.pp": "749d7ff5ec96c68e5d785299750c90cf",
+  "tests/init.pp": "bd3b8666246f6a092f27fbe3c122d7f5",
+  "spec/spec_helper.rb": "0db89c9a486df193c0e40095422e19dc"
+}

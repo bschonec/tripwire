@@ -1,0 +1,104 @@
+# Axon Agent configuration file
+
+#
+# DNS SRV record options:
+#
+# If the agent is being configured with a DNS SRV record:
+#    The agent may be configured to look up a specfic service name.
+#        (default: _tw-agw)
+#    The agent may be configured to look up the SRV record using a specific 
+#        domain 
+#        (default: the domain of the IP addresses assigned to the host)
+#
+#    default: _tw-agw._tcp.<dns domain>
+#
+#dns.service.name=_tw-agw
+#dns.service.domain=
+#
+
+#
+# HOST based agent configuration:
+#     Instead of using a DNS SRV record, the agent may be configured
+#     to talk to a specific host and port using the options:
+#
+bridge.host=tpapwtwecon001
+#bridge.port=5670
+#
+
+#
+# The registration pre-shared key is used when authenticating a new
+# agent. By default the registration pre-shared key is "".
+#
+# The file name supplied is expected to exist in the agent's
+# config directory.
+#
+# The agent deletes the registration pre-shared key file when it has
+# authenticated with the bridge.
+#
+#     Only the invariant character set is supported for the registration 
+#     pre-shared key. The following characters are supported:
+#
+#        ABCDEFGHIJKLMNOPQRSTUVWXYZ
+#        abcdefghijklmnopqrstuvwxyz
+#        0123456789
+#        "%$'( )*+,-./:;<=>?_
+#
+#     NOTE: The space character " " is supported
+#
+#registration.file.name=registration_pre_shared_key.txt
+#
+
+#
+# The agent may be configured to authenticate to the bridge using a pre-shared
+# key (registration) or use certificate created by you (pki).
+#
+#bridge.auth.mode=registration
+#
+
+#
+# The key store password is used to encrypt the contents of the agent
+# key store on disk.
+#
+#keystore.password=
+#
+
+#----------------------------------------------------------
+#
+#
+# The maximum size of the agent spool (default: 1 gigabyte)
+#
+#spool.size.max=1g
+#
+
+#
+# The agent can be configured to talk through a Socks5 proxy with 
+# these options:
+#
+#socks5.host=
+#socks5.port=
+#socks5.user.name=
+#socks5.user.password=
+#
+
+#
+# TLS options:
+#
+# The agent may be configured to use a particular TLS version and/or
+# specific TLS cipher suites.
+#
+# You may set tls.version to one of: TLSv1, TLSv1.1, TLSv1.2
+#
+#tls.version=TLSv1.2
+#
+# Valid values for tls.cipher.suites are FIPS-compatible OpenSSL cipher
+# suites which utilize an RSA key.
+#
+#tls.cipher.suites=DHE-RSA-AES256-SHA:RSA-AES256-SHA:AES256-GCM-SHA384:DHE-RSA-AES256-GCM-SHA384
+#
+
+#
+# To enable the logging of debug messages from the agent process
+# use the following option:
+#
+#log4cplus.logger.twagent=DEBUG
+#
