@@ -6,7 +6,7 @@ class tripwire::params {
   $dns_service_domain = Undef
 
 
-  $conf_file          = '/etc/tripwire/tripwire.conf'
+  $conf_file          = '/etc/tripwire/twagent.conf'
   $service_enable     = true
   $service_ensure     = running
   $service_name       = 'tripwire-axon-agent'
