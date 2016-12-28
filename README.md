@@ -1,4 +1,5 @@
 # tripwire
+<<<<<<< HEAD
 
 #### Table of Contents
 
@@ -77,3 +78,6 @@ know what the ground rules for contributing are.
 If you aren't using changelog, put your release notes here (though you should
 consider using changelog). You may also add any additional sections you feel are
 necessary or important to include here. Please use the `## ` header.
+=======
+A puppet module for installing Tripwire on Linux systems.
+>>>>>>> 5fa6fc869b401a7a8f112b19b148576bf22f2c3b
